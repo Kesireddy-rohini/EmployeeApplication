@@ -19,5 +19,15 @@ public class EmployeeServiceImpl implements EmployeeService {
 		
 		return employeeDao.employeeDetails()  ;
 	}
+	@Override
+	public Employee employeeByID(int employeeId) {
+		
+		return employeeDao.employeeByID(employeeId);
+	}
+	@Override
+	public ArrayList<Employee> employeeByLocation(String employeeLocation) {
+		
+		return employeeDao.getEmployeeByLocation(employeeLocation);
+	}
 
 }
